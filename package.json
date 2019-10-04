@@ -23,7 +23,7 @@
     "test": "echo \"Error: no test specified\"",
     "prepare": "npm run build"
   },
-  "keywords": [],
+  "keywords": ["SSR", "Server Side Rendering", "Prerendering", "JavaScript", "Express"],
   "dependencies": {
     "accept": "^3.1.3",
     "compression": "^1.7.4",
