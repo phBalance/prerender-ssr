@@ -23,7 +23,14 @@
     "test": "echo \"Error: no test specified\"",
     "prepare": "npm run build"
   },
-  "keywords": ["SSR", "Server Side Rendering", "Prerendering", "JavaScript", "Express"],
+  "keywords": [
+    "SSR",
+    "Server Side Rendering",
+    "Prerendering",
+    "JavaScript",
+    "Express",
+    "Node.JS"
+  ],
   "dependencies": {
     "accept": "^3.1.3",
     "compression": "^1.7.4",
@@ -36,7 +43,7 @@
   },
   "devDependencies": {
     "forever": "^1.0.0",
-    "np": "^5.1.0",
+    "np": "^5.0.3",
     "rimraf": "^3.0.0"
   }
 }
