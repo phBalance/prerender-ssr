@@ -1,0 +1,5 @@
+# build artifacts
+dist/
+
+# 3rd party libraries
+node_modules/
