@@ -4,7 +4,7 @@
   "description": "Prerender/server side render using headless chrome.",
   "homepage": "https://github.com/phBalance/prerender-ssr#readme",
   "author": "Peter Hunnisett <peter@softwarebalm.com>",
-  "private": true,
+  "private": false,
   "license": "MIT",
   "repository": {
     "type": "git",
