@@ -33,6 +33,8 @@ if(parsed.help) {
 		[--proxy behindThisProxy] Indicate that this server is behind this particular proxy.
 		[--public staticFileDirectory] Serve static files from this directory.
 		[--copyToDir directoryToPutRenderedFile] Generate a file for each page that is rendered.
+		[--fileExt extension] Add extension to all files that are generated. For instance, it might be useful to add ".html".
+		[--mode fileMode] Sets the file mode to be set when files are written.
 
 	boolean options need only be provided once with no additional tokens:
 		[--compress] Allows on the fly compression of reponses
@@ -65,6 +67,8 @@ parsed.port = parsed.port ? parseInt(parsed.port) : DEFAULT.PORT;
 parsed.public = parsed.public && path.resolve(parsed.public);
 parsed.headless = !parsed.headfull;
 parsed.server = !parsed.noserver;
+parsed.mode = parsed.mode || "444";
+parsed.fileExt = parsed.fileExt || "";
 
 try {
 	parsed.map = JSON.parse(parsed.map);

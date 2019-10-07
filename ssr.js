@@ -123,9 +123,9 @@ async function ssr(opts) {
 
     // Save pages to file
     if(opts.copyToDir) {
-      const writeOptions = {encoding: "utf8", mode: "400", flag: "w"};
-      const fileBase = opts.copyToDir + (fetchUrl.pathname === "/" ? "/index" : fetchUrl.pathname) + ".html";
-      console.debug(`saving files ${fileBase} (directory ${opts.copyToDir})`);
+      const writeOptions = {encoding: "utf8", mode: cmdline.mode, flag: "w"};
+      const fileBase = opts.copyToDir + (fetchUrl.pathname === "/" ? "/index" : fetchUrl.pathname) + cmdline.fileExt;
+      console.debug(`saving files with base: ${fileBase}`);
       try {
         await writeFilePromisified(fileBase, html, writeOptions);
         await writeFilePromisified(fileBase + ".gz", gzippedHtml, writeOptions);
