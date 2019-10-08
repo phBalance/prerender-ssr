@@ -7,7 +7,7 @@ const fs = require("fs");
 
 const cmdline = require("./command_line");
 const express = require("express");
-const accept = require("accept");
+const accept = require("@hapi/accept");
 const https = require("https");
 const proxy = require("http-proxy-middleware");
 const compression = require("compression");
