@@ -18,8 +18,8 @@
     "start": "node server.js",
     "start:debug": "node --inspect server.js",
     "daemon": "forever start server.js",
-    "build": "npm run build:clean && mkdir dist/ && cp package.json package-lock.json *.js dist/",
-    "build:clean": "rimraf dist/",
+    "build": "npm run build:clean && shx mkdir dist/ && shx cp *.js dist/",
+    "build:clean": "shx rm -rf dist/",
     "test": "echo \"Error: no test specified\"",
     "prepare": "npm run build"
   },
@@ -44,6 +44,6 @@
   "devDependencies": {
     "forever": "^1.0.0",
     "np": "^5.0.3",
-    "rimraf": "^3.0.0"
+    "shelljs": "^0.8.3"
   }
 }
