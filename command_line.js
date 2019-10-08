@@ -1,5 +1,6 @@
 'use strict'
 
+const fs = require("fs");
 const path = require("path");
 const log = require("loglevel");
 
@@ -76,6 +77,9 @@ try {
 	log.error(`unable to parse map parameter: ${err}`);
 	parsed.map = [];
 }
+
+// Make sure the copyToDir exists
+console.assert(!parsed.copyToDir || fs.existsSync(parsed.copyToDir), `copyToDir ${parsed.copyToDir} doesn't exist`);
 
 // Start logging
 log.setLevel(parsed.loglevel, false);
