@@ -21,6 +21,7 @@
     "start": "node server.js",
     "start:debug": "node --inspect server.js",
     "daemon": "forever start server.js",
+    "build": "",
     "test": "echo \"Error: no test specified\"",
     "prepare": "npm run build"
   },
