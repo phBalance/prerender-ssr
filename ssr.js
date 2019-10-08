@@ -1,6 +1,7 @@
 'use strict'
 
 const fs = require("fs");
+const path = require("path");
 const util = require("util");
 const url = require("url");
 const puppeteer = require("puppeteer");
@@ -126,6 +127,14 @@ async function ssr(opts) {
       const writeOptions = {encoding: "utf8", mode: cmdline.mode, flag: "w"};
       const fileBase = opts.copyToDir + (fetchUrl.pathname === "/" ? "/index" : fetchUrl.pathname) + cmdline.fileExt;
       console.debug(`saving files with base: ${fileBase}`);
+
+      const dirname = path.dirname(fileBase);
+      if(!fs.existsSync(dirname)) {
+        console.debug(`creating directory path ${dirname}`);
+
+        fs.mkdirSync(dirname, {recursive: true, mode: "755"});
+      }
+
       try {
         await writeFilePromisified(fileBase, html, writeOptions);
         await writeFilePromisified(fileBase + ".gz", gzippedHtml, writeOptions);
