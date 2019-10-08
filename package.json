@@ -14,7 +14,7 @@
     "url": "https://github.com/phBalance/prerender-ssr/issues"
   },
   "bin": {
-    "@phbalance/prerender-ssr": "./bin/prerender-ssr.js"
+    "prerender-ssr": "./bin/prerender-ssr.js"
   },
   "main": "server.js",
   "scripts": {
