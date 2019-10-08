@@ -13,13 +13,14 @@
   "bugs": {
     "url": "https://github.com/phBalance/prerender-ssr/issues"
   },
-  "main": "index.js",
+  "bin": {
+    "@phbalance/prerender-ssr": "./bin/prerender-ssr.js"
+  },
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "start:debug": "node --inspect server.js",
     "daemon": "forever start server.js",
-    "build": "npm run build:clean && shx mkdir dist/ && shx cp *.js dist/",
-    "build:clean": "shx rm -rf dist/",
     "test": "echo \"Error: no test specified\"",
     "prepare": "npm run build"
   },
