@@ -7,7 +7,7 @@ const log = require("loglevel");
 const parseArgs = require("minimist");
 
 const opts = {
-    string: ["blacklist", "cert", "copyToDir", "drop", "early", "key", "loglevel", "port", "proxy", "public"],
+    string: ["blacklist", "cert", "copyToDir", "drop", "early", "fileExt", "key", "loglevel", "map", "mode", "port", "proxy", "public"],
     boolean: ["compress", "headfull", "help", "noserver"]
   };
 
