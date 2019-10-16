@@ -50,7 +50,6 @@ $ node ./server.js --port 8444 --key privkey.pem --cert fullchain.pem --drop "no
 ```
 
 This will start a server that proxies requests on port `8444` (`--port 8444`) for `https://example.com` to `https://example.com:8443` (`--map "[[\"https://example.com\", \"https://example.com:8443\"]]" --proxy https://example.com:443`)
-```
 
 It uses a key and certificate (`--key privkey.pem --cert fullchain.pem`).
 
