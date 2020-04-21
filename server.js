@@ -9,7 +9,7 @@ const cmdline = require("./command_line");
 const express = require("express");
 const accept = require("@hapi/accept");
 const https = require("https");
-const proxy = require("http-proxy-middleware");
+const { createProxyMiddleware } = require("http-proxy-middleware");
 const compression = require("compression");
 const { ssr, startBrowser } = require("./ssr");
 const log = require("loglevel");
@@ -87,7 +87,7 @@ const preRenderUrl = async (req, res, next) => {
   }
 };
 
-const sendToProxy = proxy({ 
+const sendToProxy = createProxyMiddleware({ 
   target: "http://localhost:9", // This is the default route if router returns falsy. It's the discard port. https://en.wikipedia.org/wiki/Discard_Protocol
   changeOrigin: true, 
   ws: false,

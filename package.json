@@ -34,18 +34,18 @@
     "Node.JS"
   ],
   "dependencies": {
-    "@hapi/accept": "^4.0.0",
+    "@hapi/accept": "^5.0.1",
     "compression": "^1.7.4",
     "express": "^4.17.1",
-    "http-proxy-middleware": "^0.19.1",
-    "iltorb": "^2.4.3",
-    "loglevel": "^1.6.4",
-    "minimist": "^1.2.0",
-    "puppeteer": "^1.20.0"
+    "http-proxy-middleware": "^1.0.3",
+    "iltorb": "^2.4.5",
+    "loglevel": "^1.6.8",
+    "minimist": "^1.2.5",
+    "puppeteer": "^3.0.0"
   },
   "devDependencies": {
-    "forever": "^1.0.0",
-    "np": "^5.0.3",
+    "forever": "^2.0.0",
+    "np": "^6.2.1",
     "shx": "^0.3.2"
   }
 }
