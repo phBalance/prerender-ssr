@@ -47,7 +47,7 @@ if(parsed.help) {
 		`Supported string options which can be repeated any number of times (see minimist package):\n`,
 		`${options.filter((option) => option.param).reduce((accum, option) => accum + `\t[--${option.name} ${option.param}] ${option.desc}\n`, "")}\n`,
 		`Supported boolean options are:`,
-		`${options.filter((option) => option.param).reduce((accum, option) => accum + `\n\t[--${option.name}] ${option.desc}`, "")}`);
+		`${options.filter((option) => !option.param).reduce((accum, option) => accum + `\n\t[--${option.name}] ${option.desc}`, "")}`);
 
 	// Indicate that we'd like the program to exit when it can.
 	process.exit(0);
