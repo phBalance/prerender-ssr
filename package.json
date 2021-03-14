@@ -1,6 +1,6 @@
 {
   "name": "@phbalance/prerender-ssr",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Prerender/server side render using headless chrome.",
   "homepage": "https://github.com/phBalance/prerender-ssr#readme",
   "author": "Peter Hunnisett <peter@softwarebalm.com>",
