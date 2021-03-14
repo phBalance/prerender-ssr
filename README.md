@@ -8,6 +8,10 @@ Sometimes you have a need to prerender a bunch of stuff. Sometimes you have a ne
 $ npm install --save-dev @phbalance/prerender-ssr
 ```
 
+## Requirements
+
+Requires [Node.js](https://nodejs.org/) >= 7.0.0
+
 ## Common use cases
 
 ### Prerender

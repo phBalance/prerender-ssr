@@ -21,7 +21,7 @@ const app = express();
 // Enable on the fly compression?
 if(cmdline.compression) {
   log.info("on the fly compression enabled");
-  app.use(compression({ level: zlib.Z_BEST_COMPRESSION }));
+  app.use(compression({ level: zlib.constants.Z_BEST_COMPRESSION }));
 }
 
 // Do we know for sure that we're behind a proxy?
