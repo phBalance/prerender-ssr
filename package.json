@@ -41,7 +41,7 @@
     "iltorb": "^2.4.5",
     "loglevel": "^1.7.1",
     "minimist": "^1.2.5",
-    "puppeteer": "^3.3.0"
+    "puppeteer": "^8.0.0"
   },
   "devDependencies": {
     "forever": "^3.0.4",
