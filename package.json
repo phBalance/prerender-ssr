@@ -44,8 +44,8 @@
     "puppeteer": "^3.3.0"
   },
   "devDependencies": {
-    "forever": "^2.0.0",
-    "np": "^6.5.0",
+    "forever": "^3.0.4",
+    "np": "^7.4.0",
     "shx": "^0.3.3"
   }
 }
