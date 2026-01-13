@@ -37,7 +37,7 @@
     "@hapi/accept": "^5.0.2",
     "compression": "^1.7.4",
     "express": "^4.17.1",
-    "http-proxy-middleware": "^1.0.6",
+    "http-proxy-middleware": "^2.0.9",
     "iltorb": "^2.4.5",
     "loglevel": "^1.7.1",
     "minimist": "^1.2.5",
